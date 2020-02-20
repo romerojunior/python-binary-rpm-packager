@@ -1,0 +1,11 @@
+image: romerojnr/patchingui-agent:latest
+
+stages:
+  - package
+
+package:
+  tags:
+    - kubernetes
+  stage: package
+  script:
+    - make publish
